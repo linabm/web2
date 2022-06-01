@@ -19,9 +19,10 @@ const Products = ({ cat, filters, sort }) => {
     const getProducts = async () => {
       try {
         const res = await axios.get(
-          cat
-            ? "https://insappes.herokuapp.com/api/products?category=${cat}"
-            : "https://insappes.herokuapp.com/api/products/"
+          // cat
+          //   ? "https://insappes.herokuapp.com/api/products?category=${cat}"
+            // : 
+            "https://insappes.herokuapp.com/api/products/"
         );
         setProducts(res.data);
       } catch (err) {}
