@@ -25,6 +25,7 @@ const Products = ({ cat, filters, sort }) => {
             "https://insappes.herokuapp.com/api/products/"
         );
         setProducts(res.data);
+        console.log("ok");
       } catch (err) {}
     };
     getProducts();
